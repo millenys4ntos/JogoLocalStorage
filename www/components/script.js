@@ -19,8 +19,10 @@ window.onload = function(){
 
     localStorage.setItem("escuro", JSON.stringify(escuro));
   }
-
-  temas();
+ 
+  if (!localStorage.escuro || !localStorage.claro){
+      temas();
+  }
 
   document.querySelector("#temaclaro").addEventListener("click", function(){
     let tema = JSON.parse(localStorage.getItem("claro"));
