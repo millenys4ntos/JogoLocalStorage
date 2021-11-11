@@ -63,10 +63,6 @@ window.onload = function(){
    descer();
    setTimeout(parar, 1000); 
  });
-
-  document.querySelector("#resetar").addEventListener("click", function(){
-   reload();
- });
 }
 
 var personagemObj;
